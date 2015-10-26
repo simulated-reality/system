@@ -14,4 +14,6 @@ graph.
 2. Implement your idea.
 3. Open a pull request.
 
+[travis-img]: https://travis-ci.org/simulated-reality/system.svg
+[travis-url]: https://travis-ci.org/simulated-reality/system
 [doc]: http://godoc.org/github.com/simulated-reality/system
