@@ -1,4 +1,4 @@
-# System
+# System [![Build Status][travis-img]][travis-url]
 
 The package provides an abstraction of an electronic system for the purpose of
 simulation. Such a system is composed of a platform and an application. A
@@ -8,4 +8,10 @@ graph.
 
 ## [Documentation][doc]
 
-[doc]: http://godoc.org/github.com/ready-steady/simulation/system
+## Contributing
+
+1. Fork the project.
+2. Implement your idea.
+3. Open a pull request.
+
+[doc]: http://godoc.org/github.com/simulated-reality/system
