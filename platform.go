@@ -15,3 +15,8 @@ type Core struct {
 	Time  []float64
 	Power []float64
 }
+
+// Len returns the number of processing elements.
+func (p *Platform) Len() int {
+	return len(p.Cores)
+}

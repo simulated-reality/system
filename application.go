@@ -18,6 +18,11 @@ type Task struct {
 	Children []uint
 }
 
+// Len returns the number of tasks.
+func (a *Application) Len() int {
+	return len(a.Tasks)
+}
+
 // Roots returns the IDs of the tasks without parents.
 func (a *Application) Roots() []uint {
 	size := uint(len(a.Tasks))
