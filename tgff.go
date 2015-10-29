@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ready-steady/tgff"
+	"github.com/turing-complete/tgff"
 )
 
 func loadTGFF(path string) (*Platform, *Application, error) {
