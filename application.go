@@ -19,17 +19,17 @@ type Task struct {
 }
 
 // Len returns the number of tasks.
-func (a *Application) Len() int {
-	return len(a.Tasks)
+func (self *Application) Len() int {
+	return len(self.Tasks)
 }
 
 // Roots returns the IDs of the tasks without parents.
-func (a *Application) Roots() []uint {
-	size := uint(len(a.Tasks))
+func (self *Application) Roots() []uint {
+	size := uint(len(self.Tasks))
 	roots := make([]uint, 0, 1)
 
 	for i := uint(0); i < size; i++ {
-		if len(a.Tasks[i].Parents) == 0 {
+		if len(self.Tasks[i].Parents) == 0 {
 			roots = append(roots, i)
 		}
 	}
@@ -38,12 +38,12 @@ func (a *Application) Roots() []uint {
 }
 
 // Leafs returns the IDs of the tasks without children.
-func (a *Application) Leafs() []uint {
-	size := uint(len(a.Tasks))
+func (self *Application) Leafs() []uint {
+	size := uint(len(self.Tasks))
 	leafs := make([]uint, 0, size/2+1)
 
 	for i := uint(0); i < size; i++ {
-		if len(a.Tasks[i].Children) == 0 {
+		if len(self.Tasks[i].Children) == 0 {
 			leafs = append(leafs, i)
 		}
 	}

@@ -17,6 +17,6 @@ type Core struct {
 }
 
 // Len returns the number of processing elements.
-func (p *Platform) Len() int {
-	return len(p.Cores)
+func (self *Platform) Len() int {
+	return len(self.Cores)
 }
